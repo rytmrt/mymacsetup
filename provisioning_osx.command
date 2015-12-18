@@ -17,6 +17,20 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # USBドライブに[.DS_STORE]を作成しない
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
+# 隠しファイルを表示
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+#※戻したい人は下記を実行
+#defaults delete com.apple.finder AppleShowAllFiles
+
+# デスクトップを非表示
+defaults write com.apple.finder CreateDesktop -boolean false
+#※戻したい人は下記を実行
+#defaults delete com.apple.finder CreateDesktop
+
+
+# 上記設定を適応
+killall Finder
+
 
 # Xcodeコマンドラインツールのインストール？
 xcode-select --install
