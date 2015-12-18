@@ -32,6 +32,7 @@ brew tap caskroom/cask
 brew tap neovim/neovim
 brew tap rogual/neovim-dot-app
 brew tap sanemat/font
+brew tap rytmrt/rytmrt
 
 # CUI系ツールをインストール
 brew install zsh
@@ -44,6 +45,7 @@ brew install figlet
 brew install caskroom/cask/brew-cask
 brew install --HEAD neovim-dot-app
 brew install --vim-powerline ricty
+brew install sshfavo
 
 # GUI系アプリをインストール
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
